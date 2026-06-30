@@ -30,4 +30,6 @@ public class User {
     @Max(60)
     @NotNull(message = "Age cannot be Null")
     private Integer age;
+    @NotBlank(message = "Password cannot be Blank")
+    private String password;
 }
